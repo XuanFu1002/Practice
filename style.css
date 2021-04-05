@@ -1,0 +1,39 @@
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+body {
+  margin: 0px;
+  background-color: black;
+}
+
+#demo {
+  text-align: center;
+}
+
+.move {
+  display: inline-block;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  transform: translateX(-1000px);
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
